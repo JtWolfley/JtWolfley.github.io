@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johnathan Wolfley – Resume</title>
+
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Overall Resume Container */
+    .resume-container {
+        width: 900px;
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.15);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Title */
+    .header {
+        text-align: center;
+        border-bottom: 2px solid #333;
+        padding-bottom: 15px;
+    }
+
+    .name {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .contact {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .contact a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Section Wrapper */
+    .section {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Title of each section */
+    .section-title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    /* Section content grid */
+    .section-content {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Experience + Education Layout */
+    .job, .education-item {
+        margin-bottom: 18px;
+    }
+
+    .job-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .job-dates {
+        font-style: italic;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        margin-top: 5px;
+        padding-left: 20px;
+    }
+
+    /* Skills grid layout */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 40px;
+    }
+
+    .skill-item {
+        font-size: 16px;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    .skill-item::before {
+        content: "•";
+        position: absolute;
+        left: -5px;
+        top: 0;
+        font-size: 20px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="resume-container">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="name">Johnathan Wolfley</div>
+        <div class="contact">
+            Columbia, SC · 304-620-4051 · 
+            <a href="mailto:jtwolfley@hotmail.com">jtwolfley@hotmail.com</a>
+        </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="section-content">
+            Motivated and detail-oriented Computer Information Systems student with strong organizational,
+            technical, and teamwork skills. Experienced in customer service, computer systems, and
+            hands-on problem-solving in fast-paced environments.
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="section-content">
+            <div class="education-item">
+                <div class="job-title">Bachelor of Science in Computer Information Systems (In Progress)</div>
+                <div class="job-dates">Expected Graduation: May 2028</div>
+                University of South Carolina – Columbia, SC<br>
+                Minor: Business Information Management
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+        <div class="section-title">Experience</div>
+        <div class="section-content">
+
+            <div class="job">
+                <div class="job-title">Crew Member – Sonic Drive-In, Sumter, SC</div>
+                <div class="job-dates">September 2022 – July 2023</div>
+                <ul>
+                    <li>Operated fryers, grill, and hot dog station efficiently during peak hours.</li>
+                    <li>Managed and restocked kitchen supplies to ensure smooth operations.</li>
+                    <li>Coordinated with teammates to maintain quality and speed of service.</li>
+                    <li>Maintained cleanliness and food prep quality with attention to detail.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Crew Member – Griz Biz, Great Falls, MT</div>
+                <div class="job-dates">September 2018 – March 2020</div>
+                <ul>
+                    <li>Developed basic business and financial literacy skills.</li>
+                    <li>Produced and sold handmade wood products such as coasters and cutting boards.</li>
+                    <li>Gained hands-on experience with product design and customer engagement.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="section-content">
+            <div class="skills-grid">
+                <div class="skill-item">Microsoft Office Suite</div>
+                <div class="skill-item">Java (Proficient)</div>
+                <div class="skill-item">Python (Basic)</div>
+                <div class="skill-item">Customer Service & Communication</div>
+                <div class="skill-item">Remote Work Capabilities</div>
+                <div class="skill-item">Problem Solving & Time Management</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
