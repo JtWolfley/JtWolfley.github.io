@@ -30,3 +30,54 @@ h3 {
 }
 
 
+.about, .skills, .projects, .contact {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.project {
+    background: #fafbff;
+    border: 1px solid #d7dff0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.project img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 2px solid #a7b8d8;
+}
+
+
+.project p {
+    text-align: center;
+    margin: 15px auto;
+    width: 85%;
+    line-height: 1.5;
+}
+
+
+a {
+    text-decoration: none;
+    color: #3e5c9a;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1d2f57;
+    text-decoration: underline;
+}
+
+.skills span {
+    font-size: 1.1rem;
+}
