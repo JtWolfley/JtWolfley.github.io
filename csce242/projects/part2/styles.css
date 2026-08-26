@@ -10,10 +10,44 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
 }
+#image1{
+    border: 2px solid #64F222;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 2px;
+}
+#image2{
+    border: 2px solid #64F222;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 2px;
+}
+table {
+    margin:auto
+}
+table, th {
+    border: 2px solid #32A612;
+    background-color: rgba(125, 213, 253, 0.75);
+    padding: 2px;
+}
+table, td{
+    border: 2px solid #054BA6;
+    background-color: rgba(125, 213, 253, 0.75);
+    padding: 2px;
+}
 /* Navigation */
 
 
 /* Typography */
 #maincontent {
     font-family: "Trebuchet MS", sans-serif;
+}
+h1{
+    color:#32A612
+}
+h2{
+    color:#32A612
+}
+p {
+    color:#054BA6;
 }
