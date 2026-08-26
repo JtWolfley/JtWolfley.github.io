@@ -1,10 +1,19 @@
 /* Structural */
-body {
-    background-color: #04C4D9;
-    background-image: url("../images/FruitigerAero.jpg");
+#maincontent {
+    text-align: center;
+    border: 2px solid #32A612;
+    border-radius: 10px;
+    background-color: rgba(184, 229, 250, 0.75);
 }
-
+body {
+    background-image: url("../../images/FruitigerAero.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 /* Navigation */
 
 
 /* Typography */
+#maincontent {
+    font-family: "Trebuchet MS", sans-serif;
+}
