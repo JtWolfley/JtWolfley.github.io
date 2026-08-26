@@ -19,6 +19,10 @@ header {
 #maincontent, #head {
     font-family: "Novarese", sans-serif;
 }
-h1 {
+h1, h2 {
+      color: #7F7F7F;
+}
+a {
       color: #F4731E;
+      text-decoration: none;
 }
