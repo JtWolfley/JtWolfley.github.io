@@ -5,11 +5,11 @@ body {
       background-size:cover;
       border: 2px solid #F4731E;
       border-radius: 10px;
-}
-#header, #maincontent {
       background-color: rgba(255, 255, 255, 0.75);
 }
-header {
+#header, #maincontent {
+}
+#header {
       text-align: center;
 }
 /* Navigation */
