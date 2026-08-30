@@ -1,21 +1,23 @@
 /* Structural */
 body {
-      background-image: url("csce242/images/mainbackground.jpg");
-      background-repeat: no-repeat;
-      background-size:cover;
-      border: 2px solid #F4731E;
+      border: 2px solid #054BA6;
       border-radius: 10px;
-}
-#header, #maincontent {
-      background-color: rgba(255, 255, 255, 0.75);
-}
-header {
-      text-align: center;
+      background-color: rgba(184, 229, 250, 0.75);
 }
 /* Navigation */
 
 
 /* Typography */
-#maincontent, #head {
+#content {
     font-family: "Novarese", sans-serif;
+}
+h1, h2 {
+      color: #32A612;
+}
+a {
+      color: #64F222;
+      text-decoration: none;
+}
+p {
+      cplor: #054BA6;
 }
