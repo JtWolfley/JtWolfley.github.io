@@ -1,45 +1,45 @@
 /* Structural */
 body{
-    background-color: #58786D;
+    background-color: #00223D;
     margin: 0;
 }
 #sidebar, article, .idea {
     box-sizing: border-box;
 }
 #sidebar {
-    background-color: #CCA18C;
+    background-color: #266E5F;
     padding: 10px;
 }
 
 #sidebar h2 {
-    color: #58786D;
+    color: #FFF552;
     text-align: center;
 }
 #content {
     width: 80%;
     margin: auto;
-    border: 1px solid #5E433C;
+    border: 1px solid #ffffff;
 }
     #main-header {
-    background-color: #5E433C;
+    background-color: #7B9E86;
     padding: 35px;
 }
 #main-header h1 {
-    color: #FFF3C2;
+    color: #FFF552;
     text-align: center;
     font-size: 48px;
     margin: 0;
 }
 main {
-    background-color: #5E433C;
+    background-color: #7B9E86;
 }
 article {
-    background-color: #36152B;
+    background-color: #7B9E86;
 }
 
 article h2 {
-    background-color: #36152B;
-    color: #58786D;
+    background-color: #266E5F;
+    color: #FFF552;
     margin: 0;
     padding: 10px;
     text-align: center;
@@ -61,31 +61,31 @@ article img {
 }
 
 #main-nav {
-    background-color: #5E433C;
+    background-color: #266E5F;
 }
 
 #main-nav li {
-    background-color: #FFF3C2;
+    background-color: #266E5F;
     padding: 15px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
     text-align: center;
 }
 
 #main-nav a {
-    color: #58786D;
+    color: #FFF552;
     text-decoration: none;
     font-size: 25px;
 }
 
 #quick-links li {
-    background-color: white;
+    background-color: #F0ED9C;
     border-bottom: 1px solid #5E433C;
     padding: 7px;
     text-align: center;
 }
 
 #quick-links a {
-    color: #58786D;
+    color: #266E5F;
     text-decoration: none;
     font-size: 18px;
 }
@@ -106,7 +106,7 @@ article img {
 .idea {
     gap: 0;
     margin-bottom: 8px;
-    background-color: #5E433C;
+    background-color: #266E5F;
 }
 
 .idea img {
@@ -116,12 +116,12 @@ article img {
 
 .idea article {
     flex: 1;
-    background-color: #CCA18C;
-    color: white;
+    background-color: #7B9E86;
+    color: #FFF552;
 }
 
 .idea article h2 {
-    background-color: #FFF3C2;
+    background-color: #266E5F;
     text-align: left;
 }
 
@@ -129,7 +129,115 @@ article img {
     padding: 0 20px;
     line-height: 1.4;
 }
+/* Flexbox */
 
+.columns {
+    display: flex;
+}
+
+.one {
+    flex: 1;
+}
+
+.two {
+    flex: 2;
+}
+
+.three {
+    flex: 3;
+}
+
+.four {
+    flex: 4;
+}
+
+.five {
+    flex: 5;
+}
+
+.six {
+    flex: 6;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #266E5F;
+    color: #FFF552;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* Responsive Design */
+
+/* Large screens */
+
+@media (min-width: 1000px) {
+
+    #main-nav li {
+        flex: 1;
+        border: 0;
+    }
+
+    #top-content article {
+        flex: 2;
+    }
+
+}
+
+
+/* Small screens */
+
+@media (max-width: 999px) {
+
+    #content {
+        width: 95%;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+    }
+
+    #main-nav li {
+        border-bottom: 1px solid white;
+    }
+
+    #top-content {
+        gap: 0;
+    }
+
+    #top-content article {
+        margin-bottom: 8px;
+    }
+
+    .idea {
+        margin-bottom: 8px;
+    }
+
+    .idea img {
+        width: 100%;
+    }
+
+    .idea article {
+        width: 100%;
+    }
+
+    #main-header h1 {
+        font-size: 40px;
+    }
+}
 /* Typography */
 body {
     font-family: Arial, Helvetica, sans-serif;
