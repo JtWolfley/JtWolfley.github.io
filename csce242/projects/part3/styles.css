@@ -12,7 +12,7 @@ body{
 }
 
 #sidebar h2 {
-    color: #FFF3C2;
+    color: #58786D;
     text-align: center;
 }
 #content {
@@ -39,7 +39,7 @@ article {
 
 article h2 {
     background-color: #36152B;
-    color: white;
+    color: #58786D;
     margin: 0;
     padding: 10px;
     text-align: center;
@@ -53,9 +53,45 @@ article img {
 
 /* Navigation */
 
+#main-nav ul,
+#quick-links {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#main-nav {
+    background-color: #5E433C;
+}
+
+#main-nav li {
+    background-color: #FFF3C2;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+#main-nav a {
+    color: #58786D;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#quick-links li {
+    background-color: white;
+    border-bottom: 1px solid #5E433C;
+    padding: 7px;
+    text-align: center;
+}
+
+#quick-links a {
+    color: #58786D;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 /* Typography */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color:#FFF3C2;
+    color:#58786D;
 }
