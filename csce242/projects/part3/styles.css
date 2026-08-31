@@ -1,14 +1,15 @@
 /* Structural */
 body{
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    max-width: 1200px;
-    margin:0 auto;
+    background-color: #58786D;
+    margin: 0;
 }
-header{
-    text-align: center;
-    padding: 40px;
-    border: 2px solid rgb(0, 0, 0);
+#sidebar, article, .idea {
+    box-sizing: border-box;
+}
+#content {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #5E433C;
 }
 
 /* Navigation */
@@ -17,5 +18,5 @@ header{
 /* Typography */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color:blue;
+    color:#FFF3C2;
 }
