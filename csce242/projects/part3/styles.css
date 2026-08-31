@@ -6,6 +6,15 @@ body{
 #sidebar, article, .idea {
     box-sizing: border-box;
 }
+#sidebar {
+    background-color: #CCA18C;
+    padding: 10px;
+}
+
+#sidebar h2 {
+    color: #FFF3C2;
+    text-align: center;
+}
 #content {
     width: 80%;
     margin: auto;
@@ -24,6 +33,23 @@ body{
 main {
     background-color: #5E433C;
 }
+article {
+    background-color: #36152B;
+}
+
+article h2 {
+    background-color: #36152B;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+article img {
+    display: block;
+    width: 100%;
+}
+
 
 /* Navigation */
 
