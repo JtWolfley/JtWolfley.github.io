@@ -89,6 +89,46 @@ article img {
     text-decoration: none;
     font-size: 18px;
 }
+/* Top Content */
+
+#top-content {
+    gap: 8px;
+    padding: 8px 0;
+}
+
+#top-content article {
+    overflow: hidden;
+}
+
+
+/* Ideas */
+
+.idea {
+    gap: 0;
+    margin-bottom: 8px;
+    background-color: #5E433C;
+}
+
+.idea img {
+    width: 16%;
+    object-fit: cover;
+}
+
+.idea article {
+    flex: 1;
+    background-color: #CCA18C;
+    color: white;
+}
+
+.idea article h2 {
+    background-color: #FFF3C2;
+    text-align: left;
+}
+
+.idea article p {
+    padding: 0 20px;
+    line-height: 1.4;
+}
 
 /* Typography */
 body {
