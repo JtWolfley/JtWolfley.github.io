@@ -10,6 +10,13 @@ body {
     position: absolute;
 }
 
+.hero-arrow {
+    position: absolute;
+    top: 45%;
+    font-size: 4em;
+    color: white;
+    text-decoration: none;
+}
 /* Navigation */
 
 
