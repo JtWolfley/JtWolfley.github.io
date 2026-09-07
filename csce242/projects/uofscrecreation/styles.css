@@ -143,6 +143,205 @@ a {
 }
 
 
+/* Photo Sections */
+
+.photo-section {
+    position: relative;
+    margin: 40px 0 80px;
+}
+
+.photo-section > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-text {
+    position: absolute;
+    bottom: -40px;
+    width: 550px;
+    background-color: #73000a;
+    color: white;
+    padding: 35px;
+}
+
+.photo-text h2 {
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5em;
+}
+
+.photo-text p {
+    line-height: 1.6;
+}
+
+.right {
+    right: 5%;
+}
+
+.left {
+    left: 5%;
+}
+
+.small-box {
+    width: 450px;
+}
+
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* Quote */
+
+#quote {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 0;
+}
+
+#quote-photo {
+    width: 35%;
+}
+
+#quote-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#quote-text {
+    width: 65%;
+}
+
+#quote-text blockquote {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #73000a;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+#quote-text p {
+    color: #73000a;
+}
+
+
+/* Cards */
+
+#cards {
+    display: flex;
+    gap: 30px;
+    padding: 40px 0 70px;
+}
+
+.card {
+    flex: 1;
+}
+
+.card a {
+    color: #222;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    color: #73000a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5em;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* Stay Connected */
+
+#connected {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#connected h2 {
+    margin-top: 0;
+    color: #73000a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5em;
+}
+
+#connect-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Footer */
+
+#footer {
+    background-color: #eeeeee;
+    padding: 50px 0;
+    border-top: 1px solid #cccccc;
+}
+
+.footer-row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#footer-title {
+    flex: 3;
+}
+
+#footer-title h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#footer-title h2 a {
+    text-decoration: none;
+}
+
+#footer-links {
+    flex: 2;
+}
+
+#footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer-links li {
+    margin-bottom: 10px;
+}
+
+#footer-links a {
+    text-decoration: none;
+}
+
+#footer-address {
+    flex: 1;
+    line-height: 1.6;
+}
+
+
+
 @media (max-width: 768px) {
 
     #top-nav {
