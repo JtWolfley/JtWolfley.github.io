@@ -69,7 +69,7 @@ select {
     cursor: pointer;
 }
 
-#sticker {
+.sticker {
     position: absolute;
     top: 70px;
     left: 120px;
