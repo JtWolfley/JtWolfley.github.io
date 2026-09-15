@@ -57,3 +57,11 @@ btnStop.onclick = () => {
     pCount.innerHTML = "";
     clearInterval(countInterval);
 }
+
+setInterval(() => {
+    const pDisplay = document.getElementById("date-display");
+    const today = new Date();
+    const seconds = today.getSeconds();
+    pDisplay.innerHTML = seconds;
+
+    },1000);
