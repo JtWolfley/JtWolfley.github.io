@@ -41,11 +41,10 @@ btnStop.disabled = true;
 btnStart.onclick = () => {
     countInterval = setInterval(()=>{
         pCount.innerHTML = ++count;
+},500);
         btnStart.disabled = true;
         btnPause.disabled = false;
         btnStop.disabled = false;
-},500);
-
 }
 
 btnPause.onclick = () => {
