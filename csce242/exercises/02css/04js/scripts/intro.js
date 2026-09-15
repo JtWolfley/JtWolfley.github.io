@@ -31,16 +31,30 @@ docutment.getElementById("txt-numb-days").onkeyup = (e) => {
 //counting
 let countInterval;
 let count = 0;
-const pCounnt = document.getElementById("p-count");
+const pCount = document.getElementById("p-count");
+const btnStart = document.getElementById("btn-start");
+const btnPause = document.getElementById("btn-pause");
+const btnStop = document.getElementById("btn-stop");
+btnPause.disabled = true;
+btnStop.disabled = true;
 
-document.getElementById("btn-start").onclick = () => {
-    console.log("start clicked");
+btnStart.onclick = () => {
+    countInterval = setInterval(()=>{
+        pCount.innerHTML = ++count;
+        btnStart.disabled = true;
+        btnPause.disabled = false;
+        btnStop.disabled = false;
+},500);
+
 }
 
-document.getElementById("btn-pause").onclick = () => {
-    console.log("pause clicked");
+btnPause.onclick = () => {
+    clearInterval(countInterval);
+
 }
 
-document.getElementById("btn-stop").onclick = () => {
-    console.log("stop clicked");
+btnStop.onclick = () => {
+    count = 0;
+    pCount.innerHTML = "";
+    clearInterval(countInterval);
 }
