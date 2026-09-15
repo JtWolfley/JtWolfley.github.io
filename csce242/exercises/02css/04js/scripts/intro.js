@@ -27,3 +27,20 @@ docutment.getElementById("txt-numb-days").onkeyup = (e) => {
         plantImage.src="https://dummyimage.com/100x100/263803/ffffff&text=Dead+Plant";
     }
 }
+
+//counting
+let countInterval;
+let count = 0;
+const pCounnt = document.getElementById("p-count");
+
+document.getElementById("btn-start").onclick = () => {
+    console.log("start clicked");
+}
+
+document.getElementById("btn-pause").onclick = () => {
+    console.log("pause clicked");
+}
+
+document.getElementById("btn-stop").onclick = () => {
+    console.log("stop clicked");
+}
