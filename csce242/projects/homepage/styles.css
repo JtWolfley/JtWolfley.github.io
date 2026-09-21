@@ -158,7 +158,7 @@ body {
 .player img {
     width: 100%;
     height: 230px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .player h3 {
@@ -181,6 +181,82 @@ body {
     font-size: 11px;
     font-weight: bold;
     padding: 10px 25px;
+}
+
+
+/* By The Numbers */
+
+#numbers {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#numbers-small {
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#numbers h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+#number-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.number {
+    width: 200px;
+    margin: 0 30px;
+}
+
+.number h3 {
+    color: var(--orange);
+    font-size: 55px;
+    margin: 0;
+}
+
+.number p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#champion {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+
+/* Bottom Navigation */
+
+#bottom-nav {
+    background: var(--dark-gray);
+    padding: 20px;
+}
+
+#bottom-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#bottom-nav li {
+    margin: 0 25px;
+}
+
+#bottom-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -207,7 +283,7 @@ footer p {
 
 /* Small Screens */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
 
     #main-header {
         flex-direction: column;
@@ -268,6 +344,30 @@ footer p {
 
     .player img {
         height: auto;
+    }
+
+
+    /* By The Numbers */
+
+    #number-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .number {
+        margin: 15px 0;
+    }
+
+
+    /* Bottom Navigation */
+
+    #bottom-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #bottom-nav li {
+        margin: 8px 0;
     }
 
 
