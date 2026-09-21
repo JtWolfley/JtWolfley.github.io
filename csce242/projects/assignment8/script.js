@@ -30,7 +30,8 @@ const calculatePoints = () => {
     const pointsLost = days * pointsPerDay;
 
     document.getElementById("points").innerHTML =
-        "You will lose " + pointsLost.toFixed(2) + "% of your grade.";
+        "You will lose " + pointsLost.toFixed(1) +
+        "% for skipping " + days + " days.";
 
     if (days == 0) {
         document.getElementById("message").innerHTML =
@@ -40,10 +41,10 @@ const calculatePoints = () => {
             "Missing a couple classes isn't too bad.";
     } else if (days <= 5) {
         document.getElementById("message").innerHTML =
-            "You should try to miss fewer classes.";
+            "Be careful, you are starting to miss a lot of class.";
     } else {
         document.getElementById("message").innerHTML =
-            "That's a lot of classes to miss!";
+            "You are missing valuable learning opportunities.";
     }
 };
 
@@ -55,14 +56,14 @@ const calculateSemester = () => {
     const days = Math.ceil(difference / (1000 * 60 * 60 * 24));
 
     document.getElementById("days-left").innerHTML =
-        "There are " + days + " days left in the semester.";
+        "You have " + days + " days left in the semester.";
 
     if (days > 60) {
         document.getElementById("semester-message").innerHTML =
-            "We still have a while to go!";
+            "Not time to start counting down yet.";
     } else if (days > 30) {
         document.getElementById("semester-message").innerHTML =
-            "We're getting closer!";
+            "The end is getting closer!";
     } else if (days > 10) {
         document.getElementById("semester-message").innerHTML =
             "Almost there!";
@@ -75,4 +76,4 @@ const calculateSemester = () => {
 document.getElementById("exercise-one").onclick = showExerciseOne;
 document.getElementById("exercise-two").onclick = showExerciseTwo;
 document.getElementById("arrow").onclick = showMenu;
-document.getElementById("calculate").onclick = calculatePoints;
+document.getElementById("days-missed").onchange = calculatePoints;
