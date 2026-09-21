@@ -118,6 +118,10 @@ body {
     padding: 18px;
 }
 
+.hidden {
+    display:none;
+}
+
 /* images */
 img {
     max-width:100%;
