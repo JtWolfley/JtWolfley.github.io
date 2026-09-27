@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 35px;
+    background: #f4f1e8;
+}
+
+h1 {
+    color: #293241;
+    text-align: center;
+}
+
+/* CSS car art made using basic divs and CSS shapes */
+
+#grass {
+    background: #568f45;
+    height: 330px;
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+#road {
+    background: #485563;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 88px;
+    border-top: 6px solid #d9d9d9;
+    border-bottom: 6px solid #d9d9d9;
+}
+
+#yellow-line {
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    border-top: 5px dashed #f6bd60;
+}
+
+.car {
+    width: 85px;
+    height: 32px;
+    position: absolute;
+    border-radius: 18px 18px 8px 8px;
+    z-index: 2;
+}
+
+.car-top {
+    width: 45px;
+    height: 20px;
+    background: #bde0fe;
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    border-radius: 18px 18px 4px 4px;
+}
+
+.wheel {
+    width: 16px;
+    height: 16px;
+    background: #252525;
+    position: absolute;
+    bottom: -8px;
+    border-radius: 50%;
+}
+
+.left-wheel {
+    left: 12px;
+}
+
+.right-wheel {
+    right: 12px;
+}
