@@ -31,3 +31,30 @@ select {
     font-size: 16px;
 }
 
+#destinations {
+    margin: 20px;
+}
+
+#destinations a {
+    display: block;
+    margin: 15px;
+    color: #56858c;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+    border: 0;
+}
+
+footer {
+    color: #e47f7f;
+}
+
+@media only screen and (max-width: 768px) {
+    iframe {
+        width: 90%;
+    }
+}
