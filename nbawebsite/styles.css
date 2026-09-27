@@ -32,6 +32,8 @@ body {
 #logo {
     display: flex;
     align-items: center;
+    color: var(--white);
+    text-decoration: none;
 }
 
 #logo img {
@@ -306,6 +308,68 @@ footer p {
     line-height: 1.5;
     font-weight: bold;
 }
+
+.page-title {
+    background: var(--black);
+    color: var(--white);
+    padding: 25px 45px 35px;
+}
+
+.page-title > p:first-child {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.page-title h2 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.page-description {
+    max-width: 500px;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* Search Areas */
+
+.gallery-section {
+    padding: 35px 40px 60px;
+}
+
+.find {
+    max-width: 650px;
+    margin: auto;
+}
+
+.find h3 {
+    text-align: center;
+    font-size: 13px;
+}
+
+.find-options {
+    display: flex;
+    justify-content: center;
+}
+
+.find-options input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid var(--light-gray);
+    font-weight: bold;
+}
+
+.find-options select {
+    width: 30%;
+    margin-left: 8px;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    font-weight: bold;
+}
+
 
 /* Small Screens */
 
