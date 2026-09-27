@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5ed;
+    color: #56858c;
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    color: #e47f7f;
+}
+
+#choose {
+    margin: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
