@@ -87,3 +87,49 @@ let vacations = [
 ];
 
 
+function displayVacations() {
+
+    let vacationList = document.getElementById("vacation-list");
+
+    for (let i = 0; i < vacations.length; i++) {
+
+        vacationList.innerHTML += vacations[i].getCard(i);
+
+    }
+}
+
+
+function showVacation(index) {
+
+    let vacation = vacations[index];
+
+    document.getElementById("modal-title").innerHTML =
+        vacation.title;
+
+    document.getElementById("modal-image").src =
+        vacation.image;
+
+    document.getElementById("modal-type").innerHTML =
+        "Type: " + vacation.type;
+
+    document.getElementById("modal-description").innerHTML =
+        vacation.description;
+
+    document.getElementById("modal-things").innerHTML =
+        vacation.thingsToDo;
+
+    document.getElementById("modal-map").src =
+        vacation.mapSrc;
+
+    document.getElementById("vacation-modal").style.display = "block";
+}
+
+
+function closeModal() {
+
+    document.getElementById("vacation-modal").style.display = "none";
+
+}
+
+
+displayVacations();
