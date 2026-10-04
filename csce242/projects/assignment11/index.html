@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,16 +11,18 @@
     <!-- W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
-    <!-- My CSS -->
+    <!-- My Styles -->
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
     <header class="w3-container w3-teal w3-center">
-        <h1>Vacation Destinations</h1>
-        <p>Click a destination to learn more!</p>
+        <h1>Vacations</h1>
+        <p>Vacation Experiences</p>
     </header>
+
 
     <main id="vacation-list" class="w3-row-padding">
     </main>
@@ -30,50 +33,46 @@
 
         <div class="w3-modal-content w3-card-4">
 
-            <!-- Modal Header -->
-            <header class="w3-container w3-teal">
-
-                <span onclick="closeModal()"
-                      class="w3-button w3-display-topright">
-                    &times;
-                </span>
-
-                <h2 id="modal-title"></h2>
-
-            </header>
+            <!-- Close Button -->
+            <span onclick="closeModal()"
+                  class="w3-button w3-display-topright">
+                &times;
+            </span>
 
 
-            <!-- Modal Body -->
-            <div class="w3-container">
+            <div class="modal-body">
 
-                <img id="modal-image"
-                     src=""
-                     alt="Vacation destination">
+                <!-- Map -->
+                <div class="modal-map">
 
-                <h3 id="modal-type"></h3>
+                    <iframe id="modal-map"></iframe>
 
-                <p id="modal-description"></p>
+                </div>
 
-                <h3>Things To Do</h3>
 
-                <p id="modal-things"></p>
+                <!-- Vacation Information -->
+                <div class="modal-info">
 
-                <h3>Map</h3>
+                    <h2 id="modal-title"></h2>
 
-                <iframe id="modal-map"></iframe>
+                    <p>
+                        <strong>Type:</strong>
+                        <span id="modal-type"></span>
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        <span id="modal-description"></span>
+                    </p>
+
+                    <p>
+                        <strong>Things To Do:</strong>
+                        <span id="modal-things"></span>
+                    </p>
+
+                </div>
 
             </div>
-
-
-            <!-- Modal Footer -->
-            <footer class="w3-container w3-teal">
-
-                <button onclick="closeModal()"
-                        class="w3-button w3-white">
-                    Close
-                </button>
-
-            </footer>
 
         </div>
 

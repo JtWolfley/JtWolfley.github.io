@@ -1,19 +1,24 @@
 class Vacation {
 
     constructor(title, type, description, thingsToDo, image, mapSrc) {
+
         this.title = title;
         this.type = type;
         this.description = description;
         this.thingsToDo = thingsToDo;
         this.image = image;
         this.mapSrc = mapSrc;
+
     }
+
 
     getCard(index) {
 
         return `
             <section class="w3-col s12 m6 l4">
-                <div class="vacation-card" onclick="showVacation(${index})">
+
+                <div class="vacation-card"
+                     onclick="showVacation(${index})">
 
                     <img src="${this.image}" alt="${this.title}">
 
@@ -22,66 +27,69 @@ class Vacation {
                     <p>${this.type}</p>
 
                 </div>
+
             </section>
         `;
+
     }
+
 }
 
 
 let vacations = [
 
     new Vacation(
+        "Rocky Mountain",
+        "Mountain",
+        "Rocky Mountain National Park is located in Colorado and is known for its mountains, lakes, and wildlife.",
+        "Hike, camp, watch wildlife, take pictures, and enjoy the mountain views.",
+        "../../images/rocky.avif",
+        "https://www.google.com/maps?q=Rocky+Mountain+National+Park+Colorado&output=embed"
+    ),
+
+    new Vacation(
         "Myrtle Beach",
         "Beach",
-        "Myrtle Beach is a popular beach destination in South Carolina.",
-        "Go to the beach, walk on the boardwalk, shop, and eat at restaurants.",
-        "images/myrtle-beach.jpg",
-        "https://www.google.com/maps?q=Myrtle+Beach+SC&output=embed"
+        "Myrtle Beach is a popular beach destination in South Carolina with a long coastline and many attractions.",
+        "Go to the beach, walk on the boardwalk, shop, swim, and visit restaurants.",
+        "../../images/myrtle.jfif",
+        "https://www.google.com/maps?q=Myrtle+Beach+South+Carolina&output=embed"
+    ),
+
+    new Vacation(
+        "Smoky Mountains",
+        "Mountain",
+        "The Great Smoky Mountains are known for their mountain views, forests, wildlife, and hiking trails.",
+        "Hike, camp, watch wildlife, visit waterfalls, and enjoy the mountain views.",
+        "../../images/smoky.jfif",
+        "https://www.google.com/maps?q=Great+Smoky+Mountains+Tennessee&output=embed"
+    ),
+
+    new Vacation(
+        "Venice Beach",
+        "Beach",
+        "Venice Beach is a popular beach in California known for its boardwalk, ocean views, and outdoor activities.",
+        "Go to the beach, walk along the boardwalk, bike, shop, and watch street performers.",
+        "../../images/venice.jfif",
+        "https://www.google.com/maps?q=Venice+Beach+California&output=embed"
     ),
 
     new Vacation(
         "Miami Beach",
         "Beach",
-        "Miami Beach is a popular vacation destination in Florida with warm weather and beautiful beaches.",
-        "Swim, relax on the beach, shop, eat, and explore the city.",
-        "images/miami.jpg",
+        "Miami Beach is a popular Florida destination known for its beaches, warm weather, and city life.",
+        "Swim, relax on the beach, shop, eat at restaurants, and explore the city.",
+        "../../images/miami.jfif",
         "https://www.google.com/maps?q=Miami+Beach+Florida&output=embed"
     ),
 
     new Vacation(
-        "Maui",
-        "Beach",
-        "Maui is a Hawaiian island known for its beaches and tropical scenery.",
-        "Go snorkeling, swim, hike, visit waterfalls, and explore the island.",
-        "images/maui.jpg",
-        "https://www.google.com/maps?q=Maui+Hawaii&output=embed"
-    ),
-
-    new Vacation(
-        "Aspen",
+        "Mount Rainier",
         "Mountain",
-        "Aspen is a mountain town in Colorado that is known for skiing and beautiful scenery.",
-        "Ski, snowboard, hike, bike, and explore the town.",
-        "images/aspen.jpg",
-        "https://www.google.com/maps?q=Aspen+Colorado&output=embed"
-    ),
-
-    new Vacation(
-        "Gatlinburg",
-        "Mountain",
-        "Gatlinburg is a mountain town in Tennessee near the Great Smoky Mountains.",
-        "Hike, visit the national park, shop, and enjoy the mountain views.",
-        "images/gatlinburg.jpg",
-        "https://www.google.com/maps?q=Gatlinburg+Tennessee&output=embed"
-    ),
-
-    new Vacation(
-        "Lake Tahoe",
-        "Mountain",
-        "Lake Tahoe is a large lake surrounded by mountains in California and Nevada.",
-        "Hike, ski, swim, kayak, and enjoy the scenery.",
-        "images/lake-tahoe.jpg",
-        "https://www.google.com/maps?q=Lake+Tahoe&output=embed"
+        "Mount Rainier is a large mountain in Washington surrounded by forests, lakes, and hiking trails.",
+        "Hike, camp, take pictures, see waterfalls, and enjoy the mountain scenery.",
+        "../../images/mtrainer.jfif",
+        "https://www.google.com/maps?q=Mount+Rainier+Washington&output=embed"
     )
 
 ];
@@ -96,6 +104,7 @@ function displayVacations() {
         vacationList.innerHTML += vacations[i].getCard(i);
 
     }
+
 }
 
 
@@ -106,11 +115,8 @@ function showVacation(index) {
     document.getElementById("modal-title").innerHTML =
         vacation.title;
 
-    document.getElementById("modal-image").src =
-        vacation.image;
-
     document.getElementById("modal-type").innerHTML =
-        "Type: " + vacation.type;
+        vacation.type;
 
     document.getElementById("modal-description").innerHTML =
         vacation.description;
@@ -121,13 +127,16 @@ function showVacation(index) {
     document.getElementById("modal-map").src =
         vacation.mapSrc;
 
-    document.getElementById("vacation-modal").style.display = "block";
+    document.getElementById("vacation-modal").style.display =
+        "block";
+
 }
 
 
 function closeModal() {
 
-    document.getElementById("vacation-modal").style.display = "none";
+    document.getElementById("vacation-modal").style.display =
+        "none";
 
 }
 
