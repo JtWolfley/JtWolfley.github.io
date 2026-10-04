@@ -18,3 +18,35 @@ body {
     box-shadow: 0 2px 5px gray;
 }
 
+.vacation-card:hover {
+    box-shadow: 0 4px 10px gray;
+}
+
+.vacation-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.vacation-card h2 {
+    margin-bottom: 5px;
+}
+
+.vacation-card p {
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+#modal-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+#modal-map {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-bottom: 20px;
+}
