@@ -395,6 +395,33 @@ footer p {
     height: 160px;
 }
 
+/* Players Page */
+
+.players-page .gallery-section {
+    background: var(--black);
+}
+
+.players-page .find {
+    color: var(--white);
+}
+
+.players-page #player-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto 0;
+}
+
+.players-page .player {
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.players-page .player img {
+    height: 160px;
+}
+
 /* Player Preview */
 
 .preview-page {
@@ -706,6 +733,11 @@ footer p {
     width: 90%;
     margin: 0 0 30px;
     }
+
+    .players-page .player {
+    width: 90%;
+    margin: 0 0 30px;
+}
     /* Player Preview */
 
     #player-preview {
