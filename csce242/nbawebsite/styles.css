@@ -767,7 +767,7 @@ footer p {
     footer p {
         margin: 0;
     }
-}
+
     .teams-page .player {
     width: 90%;
     margin: 0 0 30px;
@@ -896,4 +896,5 @@ footer p {
 .about-card {
     width: 100%;
     margin-bottom: 20px;
+}
 }
