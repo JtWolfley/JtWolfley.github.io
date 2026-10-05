@@ -8,12 +8,10 @@ questions.forEach(function(question) {
 
         button.addEventListener("click", function() {
 
-            // Remove selected answer from this question
             buttons.forEach(function(otherButton) {
                 otherButton.classList.remove("selected");
             });
 
-            // Select the button that was clicked
             button.classList.add("selected");
 
         });

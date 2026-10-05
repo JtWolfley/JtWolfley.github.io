@@ -532,6 +532,8 @@ footer p {
 
 /* Quiz */
 
+/* Quiz */
+
 #quiz {
     max-width: 900px;
     margin: 20px auto 40px;
@@ -576,6 +578,7 @@ footer p {
 .answers {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .answers button {
@@ -584,6 +587,16 @@ footer p {
     border: none;
     padding: 12px 5px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.answers button:hover {
+    background: #dddddd;
+}
+
+.answers button.selected {
+    background: var(--orange);
+    color: var(--white);
 }
 
 #submit-button {
@@ -593,6 +606,7 @@ footer p {
     padding: 15px 50px;
     margin-top: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* About */
@@ -749,7 +763,7 @@ footer p {
         gap: 15px;
         padding: 25px;
     }
-    
+
     footer p {
         margin: 0;
     }
@@ -846,7 +860,8 @@ footer p {
 /* Quiz */
 
 #quiz {
-    margin: 20px;
+    width: 90%;
+    margin: 20px auto 40px;
     padding: 10px 15px 25px;
 }
 
@@ -881,5 +896,4 @@ footer p {
 .about-card {
     width: 100%;
     margin-bottom: 20px;
-}
 }
