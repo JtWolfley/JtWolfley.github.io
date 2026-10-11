@@ -195,14 +195,14 @@ body {
     padding: 50px 20px;
 }
 
-#numbers-small {
+#numbers-small, #trivia-title p {
     color: var(--orange);
     font-size: 13px;
     font-weight: bold;
     margin-bottom: 3px;
 }
 
-#numbers h2 {
+#numbers h2, #trivia-title h2 {
     font-size: 30px;
     margin-top: 0;
 }
@@ -235,6 +235,82 @@ body {
     font-size: 18px;
 }
 
+
+/* Did You Know Section */
+
+#trivia {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#trivia-title {
+    margin-bottom: 40px;
+}
+
+#trivia-title p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#trivia-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#trivia-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.trivia-card {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 250px;
+    transition: transform 0.3s;
+}
+
+.trivia-card:hover {
+    transform: translateY(-5px);
+}
+
+.trivia-card h3 {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.trivia-answer {
+    display: none;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.trivia-answer.show {
+    display: block;
+}
+
+.trivia-button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.trivia-button:hover {
+    background-color: #d96538;
+}
 
 /* Bottom Navigation */
 
@@ -742,6 +818,11 @@ footer p {
         margin: 15px 0;
     }
 
+    /* Did You Know Section */
+
+        #trivia-list {
+        flex-direction: column;
+    }
 
     /* Bottom Navigation */
 
