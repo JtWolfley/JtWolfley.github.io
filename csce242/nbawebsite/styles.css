@@ -387,6 +387,7 @@ footer p {
     background: var(--black);
     color: var(--white);
     padding: 25px 45px 35px;
+    text-align: center;
 }
 
 .page-title > p:first-child {
@@ -406,31 +407,8 @@ footer p {
     font-size: 13px;
     line-height: 1.5;
     font-weight: bold;
-}
-
-.page-title {
-    background: var(--black);
-    color: var(--white);
-    padding: 25px 45px 35px;
-}
-
-.page-title > p:first-child {
-    color: var(--orange);
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.page-title h2 {
-    font-size: 38px;
-    margin: 12px 0;
-}
-
-.page-description {
-    max-width: 500px;
-    font-size: 13px;
-    line-height: 1.5;
-    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Search Areas */
