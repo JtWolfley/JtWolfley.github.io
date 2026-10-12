@@ -1,0 +1,83 @@
+
+[
+    {
+        "_id": 1,
+        "name": "Anthony Edwards",
+        "team": "Minnesota Timberwolves",
+        "position": "SG",
+        "number": 5,
+        "conference": "Western",
+        "img_name": "../images/anthony.png",
+        "popup": "playerpopus/anthony.html"
+    },
+    {
+        "_id": 2,
+        "name": "Victor Wembanyama",
+        "team": "San Antonio Spurs",
+        "position": "C",
+        "number": 1,
+        "conference": "Western",
+        "img_name": "../images/victorw.png",
+        "popup": "playerpopus/victorw.html"
+    },
+    {
+        "_id": 3,
+        "name": "Shai Gilgeous-Alexander",
+        "team": "Oklahoma City Thunder",
+        "position": "PG/SG",
+        "number": 2,
+        "conference": "Western",
+        "img_name": "../images/sga.png",
+        "popup": "playerpopus/sga.html"
+    },
+    {
+        "_id": 4,
+        "name": "Nikola Jokic",
+        "team": "Denver Nuggets",
+        "position": "C",
+        "number": 15,
+        "conference": "Western",
+        "img_name": "../images/jokic.png",
+        "popup": "playerpopus/jokic.html"
+    },
+    {
+        "_id": 5,
+        "name": "Luka Doncic",
+        "team": "Los Angeles Lakers",
+        "position": "PG",
+        "number": 77,
+        "conference": "Western",
+        "img_name": "../images/luka.png",
+        "popup": "playerpopus/luka.html"
+    },
+    {
+        "_id": 6,
+        "name": "Jalen Brunson",
+        "team": "New York Knicks",
+        "position": "PG",
+        "number": 11,
+        "conference": "Eastern",
+        "img_name": "../images/Brunson.png",
+        "popup": "playerpopus/brunson.html"
+    },
+    {
+        "_id": 7,
+        "name": "Stephen Curry",
+        "team": "Golden State Warriors",
+        "position": "PG",
+        "number": 30,
+        "conference": "Western",
+        "img_name": "../images/curry.png",
+        "popup": "playerpopus/curry.html"
+    },
+    {
+        "_id": 8,
+        "name": "Giannis Antetokounmpo",
+        "team": "Miami Heat",
+        "position": "PF",
+        "number": 34,
+        "conference": "Eastern",
+        "img_name": "../images/giannis.png",
+        "popup": "playerpopus/giannis.html"
+    }
+]
