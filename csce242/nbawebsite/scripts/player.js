@@ -6,7 +6,7 @@ const getPlayers = async () => {
     try {
 
         const response = await fetch(
-            "https://jtwolfley.github.io/csce242/nbawebsite/players.json"
+            "https://jtwolfley.github.io/csce242/nbawebsite/nba.json"
         );
 
         if (!response.ok) {
