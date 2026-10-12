@@ -236,6 +236,46 @@ body {
 }
 
 
+/* NBA Highlights Section */
+
+#highlights {
+    background: var(--black);
+    color: var(--white);
+    padding: 70px 8%;
+    text-align: center;
+}
+
+#highlights-title p {
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#highlights-title h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+#highlights-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+#highlights-video {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+#highlights-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* Did You Know Section */
 
 #trivia {
@@ -951,6 +991,14 @@ footer p {
         font-size: 18px;
     }
    
+        #highlights {
+        padding: 50px 5%;
+    }
+
+    #highlights-title h2 {
+        font-size: 26px;
+    }
+
     /* Player Preview */
 
 #player-preview {
