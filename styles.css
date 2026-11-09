@@ -37,12 +37,14 @@ section {
 
 .columns {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .assignment,
 .project {
-    flex: 1;
+    flex: 0 1 calc(16.666% - 40px);
+    min-width: 160px;
 }
 
 /* Navigation */
